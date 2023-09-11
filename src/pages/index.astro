@@ -17,7 +17,13 @@ import ProjectCard from "../components/ProjectCard.astro";
   </nav>
   <main>
     <section class="hero">
-      <div class="img-container"><div class="image">image</div></div>
+      <div class="img-container">
+        <img
+          src="/images/Laney&Cooper.jpg"
+          alt="Myself, Laney Tilgner, and my dog"
+          class="image"
+        />
+      </div>
       <p>
         Hi there, I'm Laney. I am a UX Designer crafting user-centered designs
         that prioritize simplicity and elegance
@@ -55,5 +61,10 @@ import ProjectCard from "../components/ProjectCard.astro";
     aspect-ratio: 2/1;
     background-color: lightgrey;
     border-radius: 14px;
+    overflow: hidden;
+  }
+  .image {
+    width: 100%;
+    object-fit: cover;
   }
 </style>
